@@ -76,7 +76,7 @@ p{
     width: 48px;
     height: 48px;
     left: 10px;
-    top: 20px;
+    top: 12px;
 }
 .select .left {
     left: 0;
@@ -87,8 +87,9 @@ p{
 .select .right{
     flex: 1;
 }
-h4{
+h2{
     margin-bottom: -10px;
+    font-size: 16px;
 }
 .select .right a{
     color: hsl(245, 75%, 52%);
