@@ -24,19 +24,28 @@ body {
     border-radius: 20px;
 }
 .container2{
-    margin: 40px;
+    margin: 50px;
 }
-@media (min-width:375px) {
-    
+@media (min-width:375px) and (max-width:768px){
+    .container2{
+        margin: 25px;
+    }
 }
 /* End Global Rules */
 .content{
-    width: min(450px,90%) ;
+    width: 450px ;
+    min-width: 350px;
     height: 600px;
     text-align: center;
     background-color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+@media (min-width:375px) and (max-width:768px){
+    .content{
+        width: 350px;
+        height: 550px;
+    }
 }
 header{
     background-image: url(../images/illustration-hero.svg);
@@ -48,10 +57,16 @@ header{
     margin: 0px;
     padding: 0px;
 }
+@media (min-width:375px) and (max-width:768px){
+    header {
+        height: 170px;
+    }
+}
 .content .container2 article p {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 p{
     font-size: 16px;
     line-height: 1.4;
@@ -68,6 +83,14 @@ p{
     background-color: hsl(225, 100%, 98%);
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
+}
+@media (min-width:375px) and (max-width:768px){
+    .select {
+        display: flex;
+        width: 300px;
+        height: 80px;
+        }
 }
 .select .left::before {
     content: "";
@@ -98,11 +121,18 @@ h2{
     color: hsla(245, 75%, 52%, 0.733);
     text-decoration: none;
 }
-
-
 .pay {
     margin-bottom: 20px;
     width: 350px;
+    
+}
+@media (min-width:375px) and (max-width:768px){
+    .pay {
+        display: flex;
+        width: 300px;
+        height: 80px;
+        margin-bottom: -5px;
+    }
 }
 .pay button:hover{
     background-color: hsla(245, 75%, 52%, 0.733);
@@ -114,6 +144,7 @@ h2{
     border-radius: 10px;
     background-color:hsl(245, 75%, 52%) ;
     color: white;
+    box-shadow: 0px 30px 20px var(--main-color);
 }
 .bottom a{
     text-decoration: none;
@@ -123,4 +154,9 @@ h2{
 }
 .bottom a:hover{
     color: hsl(223, 47%, 23%);
+}
+@media (min-width:375px) and (max-width:768px){
+    .bottom a {
+        
+    }
 }
